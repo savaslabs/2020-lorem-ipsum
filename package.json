@@ -1,21 +1,22 @@
 {
-  "name": "pug-boilerplate",
+  "name": "2020-ipsum",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/savaslabs/pug-boilerplate.git"
+    "url": "git+https://github.com/savaslabs/2020-lorem-ipsum.git"
   },
   "author": "",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/savaslabs/pug-boilerplate/issues"
+    "url": "https://github.com/savaslabs/2020-lorem-ipsum/issues"
   },
-  "homepage": "https://github.com/savaslabs/pug-boilerplate#readme",
+  "homepage": "https://2020-ipmsum.com",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "fs": "0.0.1-security",
@@ -29,9 +30,15 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-url-builder": "^1.0.1"
+    "gulp-url-builder": "^1.0.1",
+    "lodash": "^4.17.20",
+    "minimist": "^1.2.5"
   },
   "dependencies": {
-    "webpack-stream": "^6.1.0"
+    "webpack-stream": "^6.1.1"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5",
+    "lodash": "^4.17.20"
   }
 }
