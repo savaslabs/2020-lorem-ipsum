@@ -1,9 +1,14 @@
 extends ../templates/_root
 
 append body
-  
-  include ../includes/header
-  
-  p test
-  +helloWorld
-  +helloWorld('Ava')
+  div.container.mx-auto
+    include ../includes/header
+
+    form(name="generateForm" id="generateForm")
+      select(name="type" required)
+        option(value="paragraphs" selected) Paragraphs
+        option(value="sentences") Sentences
+      input(type="number" name="number" required="required")
+      button(type="submit") Generate
+      button(type="button")#copy-button Copy
+    div#output
