@@ -52,7 +52,7 @@ function sassCompile() {
     .pipe( bsync.reload({ stream: true }) )
 }
 function sassWatch(cb) {
-  watch(['src/scss/**/*.+(sass|scss|css)'], sassCompile)
+  watch(['src/scss/**/*.+(sass|scss|css)', './tailwind.config.js'], sassCompile)
   cb()
 }
 

@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../assets/fonts/Fraunces144ptSoft-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: black;
+  font-weight: 900;
+  src: url('../assets/fonts/Fraunces144ptSoft-Black.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: semi-bold;
+  font-weight: 600;
+  src: url('../assets/fonts/Fraunces144ptSoft-SemiBold.woff2') format('woff2');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
