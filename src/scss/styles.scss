@@ -56,3 +56,27 @@ select {
 form button {
   background: url(../assets/button-background.svg) center/contain no-repeat;
 }
+
+footer a {
+  &.instagram-link {
+    background: url(../assets/instagram.svg) center/contain no-repeat;
+
+    @apply inline-block
+      w-25
+      h-25;
+  }
+
+  &.twitter-link {
+    background: url(../assets/twitter.svg) center/contain no-repeat;
+
+    @apply inline-block
+      w-30
+      h-25;
+  }
+}
+
+.labs-link:hover {
+  .glare {
+    @apply translate-x-75;
+  }
+}

@@ -22,9 +22,14 @@ append body
         p.font-fraunces.font-black.text-33.text-center.relative.-bottom-60 Let’s hope next year is better than the last!
 
     footer.flex.justify-between.py-50
-      img(src='assets/logo.svg' alt="Savas Labs logo")
+      a(href="https://savaslabs.com").labs-link
+        include ../includes/labsLogo.pug
+        span.sr-only Labs. A place for experimentation at Savas Labs.
       div
-        div Check us out!
-        div
-          a(href="https://twitter.com/savaslabs") Twitter
-          a(href="https://www.instagram.com/savas_labs/") Instagram
+        div.font-lato.font-bold.mb-5 Check us out!
+        div.flex.justify-end
+          a(href="https://twitter.com/savaslabs").twitter-link.mr-15
+            span.sr-only Twitter
+          a(href="https://www.instagram.com/savas_labs/").instagram-link
+            span.sr-only Instagram
+

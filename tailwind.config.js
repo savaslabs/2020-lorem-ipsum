@@ -44,8 +44,12 @@ module.exports = {
       margin: {
         'full': 'calc(50% - 50vw)'
       },
+      maxHeight: {
+        60: '3.75rem',
+      },
       maxWidth: {
         60: '3.75rem',
+        100: '6.25rem',
         700: '43.75rem',
       }
     },
