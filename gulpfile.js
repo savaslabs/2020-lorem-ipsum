@@ -15,8 +15,10 @@ const replace      = require('gulp-replace')
 const cleanCSS     = require('gulp-clean-css')
 const sourcemaps   = require('gulp-sourcemaps')
 const urlBuilder   = require('gulp-url-builder')
-const autoprefixer = require('gulp-autoprefixer')
+const autoprefixer = require('autoprefixer')
 const htmlbeautify = require('gulp-html-beautify')
+const postcss      = require('gulp-postcss');
+const tailwindcss  = require('tailwindcss');
 
 // variables
 const destination = 'docs'
@@ -44,7 +46,7 @@ function sassCompile() {
     'src/scss/**/*.+(sass|scss|css)',
     '!src/scss/**/_*.*'
   ]).pipe( sass({ includePaths: ['node_modules'] }) )
-    .pipe( autoprefixer() )
+    .pipe(postcss([tailwindcss(), autoprefixer()]))
     .pipe( cleanCSS() )
     .pipe( dest(`${destination}/css`) )
     .pipe( bsync.reload({ stream: true }) )
@@ -67,6 +69,12 @@ function jsWatch(cb) {
   cb()
 }
 
+// static assets
+function copy() {
+  return src('src/assets/**/*.*')
+    .pipe( dest(`${destination}/assets`))
+}
+
 // browsersync
 function sync() {
   bsync.init({
@@ -80,6 +88,7 @@ function sync() {
 exports.pug     = pugCompile
 exports.sass    = sassCompile
 exports.js      = jsBundle
-exports.build   = parallel(exports.pug, exports.sass, exports.js)
+exports.copy    = copy
+exports.build   = parallel(exports.copy, exports.pug, exports.sass, exports.js)
 exports.watch   = series(pugWatch, sassWatch, jsWatch)
 exports.default = series(exports.build, exports.watch, sync)
