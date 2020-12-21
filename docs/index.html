@@ -8,12 +8,29 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
+<body class="text-gray-900 leading-6 text-base font-lato">
   <div class="container mx-auto">
-    <header class="flex justify-between items-center"><img src="assets/logo.svg" alt="Savas Labs logo" />
-      <h1>2020 Ipsum</h1>
-      <p>March 213th, 2020</p>
+    <header class="flex justify-between items-center pt-75 pb-70 font-fraunces"><img src="assets/logo.svg" alt="Savas Labs logo" />
+      <h1 class="font-black text-33">2020 Ipsum</h1>
+      <p class="text-lg">March 213th, 2020</p>
     </header>
+    <hr class="border-t-7 border-gray-900" />
+    <section class="pt-70 pb-100">
+      <ul class="grid grid-cols-3">
+        <li class="pr-40">
+          <h2 class="font-fraunces font-bold text-lg mb-5">Lorem Ipsum</h2>
+          <p>Lorem ipsum is placeholder text commonly used in print, graphics and mockups.</p>
+        </li>
+        <li class="border-l-2 border-r-2 border-gray-900 px-40">
+          <h2 class="font-fraunces font-bold text-lg mb-5">2020 Remix</h2>
+          <p>We used lorem ipsum a lot on our team, so we thought it would be a nice way to end 2020.</p>
+        </li>
+        <li class="pl-40">
+          <h2 class="font-fraunces font-bold text-lg mb-5">Enjoy our team’s mashup of 2020</h2>
+          <p>Of all the things you may need to look back on and say, “Oh yeah that did happen in 2020!”</p>
+        </li>
+      </ul>
+    </section>
     <form name="generateForm" id="generateForm"><select name="type" required="required">
         <option value="paragraphs" selected="selected">Paragraphs</option>
         <option value="sentences">Sentences</option>
