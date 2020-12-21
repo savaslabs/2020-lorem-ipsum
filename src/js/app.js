@@ -116,7 +116,7 @@ const copyText = () => {
   window.getSelection().addRange(range);
   document.execCommand('copy');
   window.getSelection().removeAllRanges();
-  alert('data copied');
+  document.querySelector('.copied-container').classList.remove('hidden');
 };
 
 // Event Handlers.

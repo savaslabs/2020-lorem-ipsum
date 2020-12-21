@@ -1,0 +1,8 @@
+form(name="generateForm" id="generateForm" action="").flex.flex-col.items-center
+  div.grid.gap-25.grid-cols-1.lg_grid-cols-2.grid-rows-4.lg_grid-rows-2
+    input(type="number" name="number" required="required" value="2").block.py-10.pl-25.pr-10.border.border-gray-900.font-lato.font-bold.lg_col-start-1
+    select(name="type" required).block.py-10.pl-25.pr-150.uppercase.font-lato.font-bold.border.border-gray-900.appearance-none.relative.lg_col-start-2
+      option(value="paragraphs" selected) Paragraphs
+      option(value="sentences") Sentences
+    button(type="submit").w-150.py-15.font-fraunces.font-bold.lowercase.hover_underline.focus_underline.lg_row-start-2.lg_col-start-1.mx-auto.lg_mr-0 Generate
+    button(type="button")#copy-button.w-150.py-15.font-fraunces.font-bold.lowercase.hover_underline.focus_underline.lg_row-start-2.lg_col-start-2.mx-auto.lg_ml-0 Copy

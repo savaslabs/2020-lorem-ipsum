@@ -4,30 +4,6 @@ append body
   div.container.mx-auto.px-25.overflow-x-hidden
     include ../includes/header
     //- include ../includes/text-triptych
-
-    section.relative.hero-container.lg_w-auto.lg_ml-0.mt-25
-      img(src='assets/background.svg' alt="Illustrations of things related to 2020, such as toilet paper, zoom screen, covid, mask").rellax.w-full
-
-    section.output-wrapper.relative.-mt-300.pt-250.pb-100.mx-full
-      div.max-w-700.mx-auto
-        form(name="generateForm" id="generateForm" action="").flex.flex-col.items-center
-          div.grid.gap-25.grid-cols-1.lg_grid-cols-2.grid-rows-4.lg_grid-rows-2
-            input(type="number" name="number" required="required" value="2").block.py-10.pl-25.pr-10.border.border-gray-900.font-lato.font-bold.lg_col-start-1
-            select(name="type" required).block.py-10.pl-25.pr-150.uppercase.font-lato.font-bold.border.border-gray-900.appearance-none.relative.lg_col-start-2
-              option(value="paragraphs" selected) Paragraphs
-              option(value="sentences") Sentences
-            button(type="submit").w-150.py-15.font-fraunces.font-bold.lowercase.hover_underline.focus_underline.lg_row-start-2.lg_col-start-1.mx-auto.lg_mr-0 Generate
-            button(type="button")#copy-button.w-150.py-15.font-fraunces.font-bold.lowercase.hover_underline.focus_underline.lg_row-start-2.lg_col-start-2.mx-auto.lg_ml-0 Copy
-        div#output.mt-50.lg_mt-75.px-15.lg_px-0.text-20
-        p.font-fraunces.font-black.text-24.lg_text-33.text-center.relative.-bottom-60 Let’s hope next year is better than the last!
-
-    footer.flex.justify-between.py-50.items-center
-      a(href="https://savaslabs.com").labs-link
-        include ../includes/labsLogo.pug
-        span.sr-only Labs. A place for experimentation at Savas Labs.
-      div.flex.justify-end
-        a(href="https://twitter.com/savaslabs").twitter-link.mr-15
-          span.sr-only Twitter
-        a(href="https://www.instagram.com/savas_labs/").instagram-link
-          span.sr-only Instagram
-
+    include ../includes/heroImage
+    include ../includes/output
+    include ../includes/footer
