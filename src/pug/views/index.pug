@@ -8,16 +8,18 @@ append body
     section.relative
       img(src='assets/background.svg' alt="Illustrations of things related to 2020, such as toilet paper, zoom screen, covid, mask").rellax
 
-    section.output-wrapper.relative.-mt-300.mx-full.px-250.pt-250.pb-100
-      form(name="generateForm" id="generateForm")
-        select(name="type" required)
-          option(value="paragraphs" selected) Paragraphs
-          option(value="sentences") Sentences
-        input(type="number" name="number" required="required" value="2")
-        button(type="submit") Generate
-        button(type="button")#copy-button Copy
-      div#output
-      p.font-fraunces.font-black.text-33.text-center.relative.-bottom-60 Let’s hope next year is better than the last!
+    section.output-wrapper.relative.-mt-300.mx-full.pt-250.pb-100
+      div.max-w-700.mx-auto
+        form(name="generateForm" id="generateForm" action="").flex.flex-col.items-center
+          div.grid.gap-25.grid-cols-2.grid-rows-2
+            input(type="number" name="number" required="required" value="2").block.py-10.pl-25.pr-10.border.border-gray-900.font-lato.font-bold.col-start-1
+            select(name="type" required).block.py-10.pl-25.pr-150.uppercase.font-lato.font-bold.border.border-gray-900.appearance-none.relative.col-start-2
+              option(value="paragraphs" selected) Paragraphs
+              option(value="sentences") Sentences
+            button(type="submit").w-150.py-15.font-fraunces.font-bold.lowercase.hover_underline.focus_underline.row-start-2.col-start-1.ml-auto Generate
+            button(type="button")#copy-button.w-150.py-15.font-fraunces.font-bold.lowercase.hover_underline.focus_underline.row-start-2.col-start-2 Copy
+        div#output.mt-75
+        p.font-fraunces.font-black.text-33.text-center.relative.-bottom-60 Let’s hope next year is better than the last!
 
     footer.flex.justify-between.py-50
       img(src='assets/logo.svg' alt="Savas Labs logo")

@@ -44,3 +44,15 @@
     }
   }
 }
+
+select {
+  background-image: url(../assets/caret-down.svg);
+  background-position: calc(theme('spacing.full') - theme('spacing.15')) theme('spacing.15');
+
+  @apply bg-white
+    bg-no-repeat;
+}
+
+form button {
+  background: url(../assets/button-background.svg) center/contain no-repeat;
+}
