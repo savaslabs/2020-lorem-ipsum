@@ -3,14 +3,17 @@ extends ../templates/_root
 append body
   div.container.mx-auto
     include ../includes/header
-    hr.border-t-7.border-gray-900
     include ../includes/text-triptych
 
-    form(name="generateForm" id="generateForm")
-      select(name="type" required)
-        option(value="paragraphs" selected) Paragraphs
-        option(value="sentences") Sentences
-      input(type="number" name="number" required="required")
-      button(type="submit") Generate
-      button(type="button")#copy-button Copy
-    div#output
+    section.relative
+      img(src='assets/background.svg' alt="Illustrations of things related to 2020, such as toilet paper, zoom screen, covid, mask").rellax
+
+    section.output-wrapper.relative.-mt-300.mx-full.px-250.pt-250.pb-100
+      form(name="generateForm" id="generateForm")
+        select(name="type" required)
+          option(value="paragraphs" selected) Paragraphs
+          option(value="sentences") Sentences
+        input(type="number" name="number" required="required" value="2")
+        button(type="submit") Generate
+        button(type="button")#copy-button Copy
+      div#output

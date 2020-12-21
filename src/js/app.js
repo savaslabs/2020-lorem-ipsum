@@ -1,4 +1,11 @@
 import wordList from './wordList';
+import Rellax from 'rellax';
+
+const rellax = new Rellax('.rellax', {
+  speed: 1.5,
+});
+
+document.addEventListener('scroll', rellax.refresh());
 
 // Return random integer between a max and min value.
 const random = (max, min) => Math.floor(Math.random() * (max - min) + min);
@@ -118,3 +125,8 @@ form.addEventListener('submit', handleSubmit);
 
 const copyButton = document.querySelector('button#copy-button');
 copyButton.addEventListener('click', copyText);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const startingOutput = generate('paragraphs', 2);
+  appendOutput(startingOutput);
+});

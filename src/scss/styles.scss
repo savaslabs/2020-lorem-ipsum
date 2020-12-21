@@ -24,3 +24,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.output-wrapper {
+  background: linear-gradient(
+    180deg,
+    theme('colors.transparent') 0%,
+    theme('colors.green.100') 33%,
+    theme('colors.green.100') 80%,
+    theme('colors.transparent') 100%
+  );
+}
+
+#output {
+  & > p {
+    @apply text-justify;
+
+    & + p {
+      @apply mt-30;
+    }
+  }
+}
