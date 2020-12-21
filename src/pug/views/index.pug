@@ -3,6 +3,8 @@ extends ../templates/_root
 append body
   div.container.mx-auto
     include ../includes/header
+    hr.border-t-7.border-gray-900
+    include ../includes/text-triptych
 
     form(name="generateForm" id="generateForm")
       select(name="type" required)
