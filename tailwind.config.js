@@ -1,5 +1,10 @@
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: [
+      'src/**/*.*',
+    ],
+  },
   darkMode: false, // or 'media' or 'class'
   separator: '_',
   theme: {
