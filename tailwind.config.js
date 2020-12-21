@@ -3,6 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   separator: '_',
   theme: {
+    container: {
+      center: true,
+      padding: '1rem',
+    },
     extend: {
       colors: {
         gray: {
@@ -40,7 +44,10 @@ module.exports = {
         fraunces: ['Fraunces', 'serif'],
       },
       fontSize: {
+        20: '1.25rem',
+        24: '1.5rem',
         33: '2.0625rem',
+        36: '2.25rem',
       },
       margin: {
         'full': 'calc(50% - 50vw)'

@@ -47,7 +47,8 @@
 
 select {
   background-image: url(../assets/caret-down.svg);
-  background-position: calc(theme('spacing.full') - theme('spacing.15')) theme('spacing.15');
+  background-position: calc(theme('spacing.full') - theme('spacing.15'))
+    theme('spacing.15');
 
   @apply bg-white
     bg-no-repeat;
@@ -79,4 +80,9 @@ footer a {
   .glare {
     @apply translate-x-75;
   }
+}
+
+.hero-container {
+  width: 150vw;
+  margin-left: -25vw;
 }
