@@ -131,21 +131,20 @@ document.addEventListener('DOMContentLoaded', () => {
   appendOutput(startingOutput);
 });
 
-
 const headerLogo = document.querySelector('a.savas-link');
 const headerLogoImg = document.querySelector('a.savas-link > img');
 headerLogo.addEventListener('mouseover', () => {
-  headerLogoImg.src = 'assets/logo-hover.svg'
-})
+  headerLogoImg.src = 'assets/logo-hover.svg';
+});
 
 headerLogo.addEventListener('mouseleave', () => {
-  headerLogoImg.src = 'assets/logo.svg'
-})
+  headerLogoImg.src = 'assets/logo.svg';
+});
 
 headerLogo.addEventListener('focus', () => {
-  headerLogoImg.src = 'assets/logo-hover.svg'
-})
+  headerLogoImg.src = 'assets/logo-hover.svg';
+});
 
 headerLogo.addEventListener('blur', () => {
-  headerLogoImg.src = 'assets/logo.svg'
-})
+  headerLogoImg.src = 'assets/logo.svg';
+});

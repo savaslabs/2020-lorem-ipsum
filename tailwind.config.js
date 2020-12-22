@@ -49,6 +49,7 @@ module.exports = {
         fraunces: ['Fraunces', 'serif'],
       },
       fontSize: {
+        0: '0px',
         20: '1.25rem',
         24: '1.5rem',
         33: '2.0625rem',
