@@ -76,13 +76,11 @@ function copy() {
 }
 
 function favicon() {
-  return src('./favicon.ico')
+  return src('src/assets/favicon.ico')
     .pipe(
       favicons({
         appName: '2020 Ipsum',
         appShortName: '2020Ipsum',
-        path: 'favicons/',
-        background: 'transparent',
       })
     )
     .pipe(dest(`${destination}`))
