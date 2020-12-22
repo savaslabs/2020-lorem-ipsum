@@ -132,20 +132,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const footerLogo = document.querySelector('a.savas-link');
-const footerLogoImg = document.querySelector('a.savas-link > img');
-footerLogo.addEventListener('mouseover', () => {
-  footerLogoImg.src = '../assets/logo-hover.svg'
+const headerLogo = document.querySelector('a.savas-link');
+const headerLogoImg = document.querySelector('a.savas-link > img');
+headerLogo.addEventListener('mouseover', () => {
+  headerLogoImg.src = 'assets/logo-hover.svg'
 })
 
-footerLogo.addEventListener('mouseleave', () => {
-  footerLogoImg.src = '../assets/logo.svg'
+headerLogo.addEventListener('mouseleave', () => {
+  headerLogoImg.src = 'assets/logo.svg'
 })
 
-footerLogo.addEventListener('focus', () => {
-  footerLogoImg.src = '../assets/logo-hover.svg'
+headerLogo.addEventListener('focus', () => {
+  headerLogoImg.src = 'assets/logo-hover.svg'
 })
 
-footerLogo.addEventListener('blur', () => {
-  footerLogoImg.src = '../assets/logo.svg'
+headerLogo.addEventListener('blur', () => {
+  headerLogoImg.src = 'assets/logo.svg'
 })
