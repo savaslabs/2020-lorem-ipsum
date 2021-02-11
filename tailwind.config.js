@@ -18,7 +18,10 @@ module.exports = {
           900: '#333333',
         },
         green: {
-          100: '#E5FBEE'
+          100: '#E5FBEE',
+        },
+        red: {
+          400: '#F35A69',
         }
       },
       spacing: {
