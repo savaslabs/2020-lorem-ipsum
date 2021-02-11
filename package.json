@@ -18,7 +18,7 @@
   },
   "homepage": "https://2020-ipmsum.com",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "fs": "0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.0.0",
@@ -35,12 +35,12 @@
     "gulp-url-builder": "^1.0.1",
     "lodash": "^4.17.20",
     "minimist": "^1.2.5",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.3"
   },
   "dependencies": {
-    "postcss": "^8.2.1",
+    "postcss": "^8.2.6",
     "rellax": "^1.12.1",
-    "webpack-stream": "^6.1.1"
+    "webpack-stream": "^6.1.2"
   },
   "resolutions": {
     "minimist": "^1.2.5",
